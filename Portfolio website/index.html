@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="./assets/PF logo.png" alt="">
+        </a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="bio">
+            <h1>Hi, <br>
+            I am Vasu Narra.</h1> <br>
+            <h3>Java Full Stack Developer</h3> <br>
+            <p>Passionate and detail-oriented Java Full Stack Developer with good knowledge in developing scalable web applications. Proficient in both front-end and back-end technologies, including Java, Spring Boot, Angular, and RESTful APIs. Seeking to leverage my technical skills and problem-solving abilities in a dynamic and innovative company, while continuing to grow my expertise in full stack development.</p>
+            
+            <div class="btns">
+                <button><i class="fa-solid fa-envelope"></i>Email</button>
+                <button><i class="fa-solid fa-phone"></i>Mobile</button>
+                <button><i class="fa-brands fa-linkedin"></i>Linked In</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./assets/Vasu image.jfif" alt="">
+        </div>
+    </section>
+
+    <section class="about">
+        <h1>About Me</h1>
+        <h3 class="education">Education</h3>
+        <p class="Education">B.Tech in Mechanical Engineering. <br>
+            Sri Venkatesa Perumal College of Engineering and Technology. <br>
+            Puttur, Andhra Pradesh. <br>
+            2021 - 2024</p><br>
+        <h3 class="experience">Work Experience</h3>
+        <p class="Experience">I am currently working as an intern in Front End Development in Unified Mentor Pvt Ltd.</p><br>
+        <h3 class="hobbies">Hobbies</h3>
+        <p class="hobbies">Reading <br>
+            Playing outdoor games <br>
+            Watching thriller and action movies <br>
+            Explore new things by travelling
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project-item">
+                <img src="./assets/images/img1.jpg" alt="Project 1">
+                <img src="./assets/images/img2.jfif" alt="">
+                <h3>Portfolio</h3>
+                <p>Created a Personal portfolio website by using only front end technologies like HTML, CSS, JavaScript.</p>
+            </div>
+            <div class="project-item">
+                <img src="./assets/images/img3.png" alt="Project 2">
+                <h3>Music Player</h3>
+                <p>Created a music player with Next, Previous, Play and Pause and also add songs to it. And also controls like volume control amd many more</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vasu Narra. All rights reserved.</p>
+        <a href="./Vasu Narra Resume.pdf.pdf" target="_blank">Download Resume</a>
+    </footer>
+
+    <script src="./portfolio.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    color: cornsilk;
+}
+
+    /* Header */
+.header{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(131, 131, 234);
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 20px;
+    position: relative;
+}
+.header nav a{
+    margin: 25px;
+    text-decoration: none;
+    color:black;
+}
+.header nav a:hover{
+    color: rgb(243, 26, 210);
+}
+.header a img{
+    height: 50px;
+    width: 50px;
+} 
+
+    /* Home */
+.home{
+    height: 90%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+}
+.home div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.home>.image{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.home>.image img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.home .bio{
+    height: 70%;
+    width: 50%;
+    padding-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home .bio h1{
+    font-size: 40px;
+}
+.home .bio p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+.home .bio .btns {
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.home .bio .btns button{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(44, 19, 120);
+    color: white;
+}
+.home .bio .btns i{
+    padding-right: 10px;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgb(29, 8, 121);
+}
+
+.about {
+    padding: 50px 20px;
+    background-color: #cc8ee4;
+    text-align: center;
+    color: black;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+    /* Projects */
+#projects {
+    padding: 50px 20px;
+    background-color: #8ad2ca;
+    text-align: center;
+    color: black;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    margin: 10px;
+    width: 300px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+    /* Contact */
+#contact {
+    padding: 50px 20px;
+    background-color: #dfd6d6;
+    text-align: center;
+    color: black;
+}
+
+#contact h2{
+    padding-bottom: 30px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: #5313b9;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+footer>a{
+    color: #8ad2ca;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-gallery {
+        flex-direction: column;
+    }
+}
